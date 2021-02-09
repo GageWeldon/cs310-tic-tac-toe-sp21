@@ -3,7 +3,7 @@ package edu.jsu.mcis.cs310.tictactoe;
 /**
 * TicTacToeModel implements the Model for the Tic-Tac-Toe game.
 *
-* @author  Your Name
+* @author  Edward Weldon
 * @version 1.0
 */
 public class TicTacToeModel {
@@ -52,7 +52,11 @@ public class TicTacToeModel {
 
         /* Initialize board (fill with TicTacToeSquare.EMPTY) */
         
-        // INSERT YOUR CODE HERE
+        for(int i=0;i<3;i++){
+		for(int j=0;j<3;j++){
+			board[i][j] = TicTacToeSquare.EMPTY;
+			}
+		}
         
     }
     /**
