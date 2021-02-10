@@ -78,12 +78,12 @@ public class TicTacToeModel {
         if(isValidSquare(row,col) && !this.isSquareMarked(row,col)){
 		if(isXTurn()){
 			this.board[row][col] = TicTacToeSquare.X;
-			XTurn = false;
+			xTurn = false;
 			return true;
 		}
 		else {
 			this.board[row][col] = TicTacToeSquare.O;
-			XTurn = true;
+			xTurn = true;
 			return true;
 		}
 	}
@@ -292,7 +292,7 @@ public class TicTacToeModel {
     @Override
     public String toString() {
         
-        StringBuilder output = new StringBuilder(" ");
+        StringBuilder output = new StringBuilder("  ");
         
         for (int i = 0; i < dimension; i++){
 		output.append(i);}

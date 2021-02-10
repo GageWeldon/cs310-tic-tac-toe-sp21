@@ -41,19 +41,16 @@ public class TicTacToeView {
         
         if (isXTurn){
 		System.out.println("Player 1 (X) Move:\n Enter the row and column numbers, "
-			+ "separated by a space: ")
+			+ "separated by a space: ");}
 
 	else {
 		System.out.println("Player 2 (O) Move:\n Enter the row and column numbers, "
-			+ "separated by a space: ")
+			+ "separated by a space: ");}
 
 	String s = keyboard.nextLine();
-	s = s.trim();
-	int row = (int) s.substring(0,s.indexOf(' '));
-	int col = (int) s.substring(s.indexOf(' '));
-	TicTacToeMove obj = new TicTacToeMove(row,col);
-	return obj;
-	return isXTurn;
+	String[] sArr = s.split(" ");
+	int[] iArr = {Integer.parseInt(sArr[0], Integer.parseInt(sArr[1]))};
+	return new TicTacToeMove(iArr[0], iArr[1]);
 
 
     }
