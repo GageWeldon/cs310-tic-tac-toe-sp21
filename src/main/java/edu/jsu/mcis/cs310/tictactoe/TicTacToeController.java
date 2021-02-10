@@ -42,8 +42,6 @@ public class TicTacToeController {
     */
 
     public void start() {
-    
-        /* MAIN LOOP (repeats until game is over) */
 
         while(!mode.isGameOver()){
 		view.showBoard(model.toString());
@@ -64,4 +62,5 @@ public class TicTacToeController {
         
     }
 
+}
 }
